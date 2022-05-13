@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de communication</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Précedent</button>
+          <button id="nextButton">Suivant</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Dimanche</div>
+        <div>Lundi</div>
+        <div>Mardi</div>
+        <div>Mercredi</div>
+        <div>Jeudi</div>
+        <div>Vendredi</div>
+        <div>Samedi</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>Nouvel évènement </h2>
+
+      <input id="eventTitleInput" placeholder="Descriptif évènement" />
+
+      <button id="saveButton">Sauvegarder</button>
+      <button id="cancelButton">Annuler</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Évènement</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Supprimer</button>
+      <button id="closeButton">Fermer</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
